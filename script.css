@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://picsum.photos/seed/picsum/200/300?grayscale);
+  background-size: cover;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.owl-carousel {
+  overflow: hidden;
+}
+
+.owl-content {
+  background: rgba(40, 174, 25, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+  display: flex;
+}
+
+.owl-carousel .owl-item img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 200px;
+  align-self: center;
+  margin: 30px;
+  flex-direction: column;
+}
+
+.owl-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.line-2 {
+  color: blue;
+}
+
+.line-2::after,
+.line-2::before {
+  content: "-";
+}
+
+@media screen and (max-width: 600px) {
+  .owl-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+}

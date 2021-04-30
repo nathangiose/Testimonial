@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="/script.css" />
+    <title>Testimonial slider
+    </title>
+  </head>
+  <div class="owl-carousel">
+    <div class="owl-content">
+      <img
+        src="https://picsum.photos/id/237/200/300"
+        alt="photos"
+        style="width: 100px; height: 100px;"
+      />
+      <div class="owl-items">
+        <h2 class="heading">Name</h2>
+        <h3 class="heading line-2">Title</h3>
+        <q>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit in
+          reiciendis, modi nostrum deleniti repudiandae nulla? Esse officiis
+          molestias odio ab aspernatur. Rerum molestias voluptatibus id culpa
+          aliquam illo numquam.
+        </q>
+      </div>
+    </div>
+    <div class="owl-content">
+      <img src="https://picsum.photos/id/237/200/300" alt="photos" style="width: 100px; height: 100px;"/>
+      <div class="owl-items">
+        <h2 class="heading">Name</h2>
+        <h3 class="heading line-2">Title</h3>
+        <q>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit in
+          reiciendis, modi nostrum deleniti repudiandae nulla? Esse officiis
+          molestias odio ab aspernatur. Rerum molestias voluptatibus id culpa
+          aliquam illo numquam.
+        </q>
+      </div>
+    </div>
+    <div class="owl-content">
+      <img src="https://picsum.photos/id/237/200/300" alt="photos" style="width: 100px; height: 100px;" />
+      <div class="owl-items">
+        <h2 class="heading">Name</h2>
+        <h3 class="heading line-2">Title</h3>
+        <q>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit in
+          reiciendis, modi nostrum deleniti repudiandae nulla? Esse officiis
+          molestias odio ab aspernatur. Rerum molestias voluptatibus id culpa
+          aliquam illo numquam.
+        </q>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          responsive:{
+            0:{
+              items:1,
+              stagePadding:0
+
+            },
+           500:{
+              items:1,
+              margin: 50,
+              stagePadding:100,
+            }
+          }
+          //   autoplay: true,
+        });
+      });
+    </script>
+  </body>
+</html>
+
